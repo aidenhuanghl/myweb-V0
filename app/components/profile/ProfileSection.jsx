@@ -1,28 +1,21 @@
-import React from 'react';
+"use client"
 
-const ProfileSection = () => {
+import Image from "next/image"
+
+export default function ProfileSection() {
   return (
-    <section className="profile-section" id="about">
-      <div className="profile-container">
-        <div className="profile-image">
-          {/* Placeholder for profile image */}
-          <div className="image-placeholder">Profile Image</div>
-        </div>
-        <div className="profile-info">
-          <h2>About Me</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Nullam auctor, nisl nec ultricies aliquet, nunc nisl aliquam nunc, 
-            vitae aliquam nisl nunc vitae nisl.
-          </p>
-          <p>
-            Sed euismod, nisl nec ultricies aliquet, nunc nisl aliquam nunc,
-            vitae aliquam nisl nunc vitae nisl.
-          </p>
-        </div>
+    <div className="p-4 flex items-center space-x-3 mb-4 transition-all duration-300 hover:bg-gray-50 rounded-lg">
+      <Image
+        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SCR-20250309-tmhe-gdvC14QXQ0j7iNRVt4uzc1uAfSMW7M.jpeg"
+        alt="Profile picture"
+        width={48}
+        height={48}
+        className="rounded-full"
+      />
+      <div>
+        <h2 className="font-semibold text-lg">Onur Şuvalçınkaya</h2>
+        <p className="text-gray-500 text-sm">Software Engineer</p>
       </div>
-    </section>
-  );
-};
-
-export default ProfileSection; 
+    </div>
+  )
+}

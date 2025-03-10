@@ -1,22 +1,16 @@
-import React from 'react';
-
-const Introduction = () => {
+export default function Introduction() {
   return (
-    <section className="introduction" id="home">
-      <div className="hero-content">
-        <h1>Hello, I'm <span className="highlight">Your Name</span></h1>
-        <h2>Web Developer & Designer</h2>
-        <p className="intro-text">
-          Welcome to my personal website. I'm passionate about creating 
-          beautiful and functional web experiences.
-        </p>
-        <div className="cta-buttons">
-          <button className="primary-btn">See My Work</button>
-          <button className="secondary-btn">Contact Me</button>
-        </div>
-      </div>
-    </section>
-  );
-};
+    <div className="max-w-4xl mb-10">
+      <p className="text-lg mb-6">
+        Hi 👋 I'm Onur (meaning "Honour" in English), a software engineer, dj, writer, and minimalist based in
+        Amsterdam, The Netherlands.
+      </p>
 
-export default Introduction; 
+      <p className="text-lg mb-6">
+        I develop things as a Senior Frontend Software Engineer at Bitvavo. Previously, I worked as a Senior
+        Frontend Software Engineer at heycar, Frontend Software Engineer at Yemeksepeti, Fullstack Software Engineer
+        at Sistas, Mobile Developer at Tanbula, and Specialist at Apple.
+      </p>
+    </div>
+  )
+}
